@@ -52,7 +52,7 @@ class VendorController {
       String storeImage = await _uploadVendorImageToStorage(image);
       await _firestore.collection('vendors').doc(_auth.currentUser!.uid).set({
         'bussinessName': bussinessName,
-        'emai': email,
+        'email': email,
         'phoneNumber': phoneNumber,
         'countryValue': countryValue,
         'stateValue': stateValue,
