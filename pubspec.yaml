@@ -1,0 +1,28 @@
+name: seller_e_commerce
+version: 1.0.0+1
+publish_to: none
+description: A new Flutter project.
+environment: 
+  sdk: '>=2.19.2 <3.0.0'
+
+dependencies: 
+  cupertino_icons: ^1.0.2
+  firebase_core: 2.7.1
+  cloud_firestore: 4.4.4
+  firebase_auth: 4.2.10
+  firebase_storage: 11.0.15
+  image_picker: 0.8.6+4
+  flutterfire_ui: 0.4.3+20
+  country_state_city_picker: 1.2.8
+  flutter_easyloading: 3.0.5
+  flutter: 
+    sdk: flutter
+
+dev_dependencies: 
+  flutter_lints: ^2.0.0
+  flutter_test: 
+    sdk: flutter
+
+flutter: 
+  uses-material-design: true
+
