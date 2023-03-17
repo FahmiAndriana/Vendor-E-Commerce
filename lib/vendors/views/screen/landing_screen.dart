@@ -14,12 +14,15 @@ class LandingScreen extends StatefulWidget {
   State<LandingScreen> createState() => _LandingScreenState();
 }
 
+bool logout = false;
+
 class _LandingScreenState extends State<LandingScreen> {
   @override
   Widget build(BuildContext context) {
     final FirebaseAuth _auth = FirebaseAuth.instance;
     final CollectionReference _vendorStream =
         FirebaseFirestore.instance.collection('vendors');
+
     return Scaffold(
       body: StreamBuilder<DocumentSnapshot>(
           stream: _vendorStream.doc(_auth.currentUser!.uid).snapshots(),
@@ -78,7 +81,8 @@ class _LandingScreenState extends State<LandingScreen> {
                     ),
                     TextButton(
                       onPressed: () async {
-                        await _auth.signOut;
+                        await _auth.signOut();
+                        print("logout");
                       },
                       child: Text('LogOut'),
                     )

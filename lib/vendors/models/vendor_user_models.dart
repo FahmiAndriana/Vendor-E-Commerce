@@ -1,6 +1,7 @@
 class VendorUserModel {
   final bool approved;
   final String bussinessName;
+  final String vendorId;
   final String cityValue;
   final String countryValue;
   final String email;
@@ -13,6 +14,7 @@ class VendorUserModel {
   VendorUserModel({
     required this.approved,
     required this.bussinessName,
+    required this.vendorId,
     required this.cityValue,
     required this.countryValue,
     required this.email,
@@ -29,6 +31,7 @@ class VendorUserModel {
           bussinessName: json['bussinessName'] != null
               ? json['bussinessName']! as String
               : '',
+          vendorId: json['vendorId'] != null ? json['vendorId']! as String : '',
           cityValue:
               json['cityValue'] != null ? json['cityValue']! as String : '',
           countryValue: json['countryValue'] != null
@@ -52,6 +55,7 @@ class VendorUserModel {
     return {
       'approved': approved,
       'bussinessName': bussinessName,
+      'vendorId': vendorId,
       'cityValue': cityValue,
       'countryValue': countryValue,
       'email': email,
