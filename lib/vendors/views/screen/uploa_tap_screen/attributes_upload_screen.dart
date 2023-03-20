@@ -33,7 +33,7 @@ class _AttributesUploadScreenState extends State<AttributesUploadScreen>
           TextFormField(
             validator: (value) {
               if (value!.isEmpty) {
-                return 'Please fields Must not be empty';
+                return 'Please Brand Must not be empty';
               }
               return null;
             },

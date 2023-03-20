@@ -59,7 +59,7 @@ class _GeneralUploadScreenState extends State<GeneralUploadScreen>
               TextFormField(
                 validator: (value) {
                   if (value!.isEmpty) {
-                    return 'Please fields Must not be empty';
+                    return 'Please Name Must not be empty';
                   }
                   return null;
                 },
@@ -76,7 +76,7 @@ class _GeneralUploadScreenState extends State<GeneralUploadScreen>
               TextFormField(
                 validator: (value) {
                   if (value!.isEmpty) {
-                    return 'Please fields Must not be empty';
+                    return 'Please Price Must not be empty';
                   }
                   return null;
                 },
@@ -94,7 +94,7 @@ class _GeneralUploadScreenState extends State<GeneralUploadScreen>
               TextFormField(
                 validator: (value) {
                   if (value!.isEmpty) {
-                    return 'Please fields Must not be empty';
+                    return 'Please Quantity Must not be empty';
                   }
                   return null;
                 },
@@ -111,7 +111,7 @@ class _GeneralUploadScreenState extends State<GeneralUploadScreen>
               DropdownButtonFormField(
                   validator: (value) {
                     if (value!.isEmpty) {
-                      return 'Please fields Must not be empty';
+                      return 'Please Category Must not be empty';
                     }
                     return null;
                   },
@@ -130,7 +130,7 @@ class _GeneralUploadScreenState extends State<GeneralUploadScreen>
               TextFormField(
                 validator: (value) {
                   if (value!.isEmpty) {
-                    return 'Please fields Must not be empty';
+                    return 'Please Desc Must not be empty';
                   }
                   return null;
                 },
