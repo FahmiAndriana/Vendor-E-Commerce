@@ -142,7 +142,7 @@ class WithdrawScreen extends StatelessWidget {
                   onTap: () async {
                     if (_formLey.currentState!.validate()) {
                       await _firestore
-                          .collection('witdraw')
+                          .collection('withdraw')
                           .doc(Uuid().v4())
                           .set({
                         'amount': amount,
